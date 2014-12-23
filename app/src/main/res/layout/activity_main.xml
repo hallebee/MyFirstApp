@@ -3,14 +3,7 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentTop="true"
-        android:weightSum="1" >
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity" >
 
         <TextView
             android:layout_width="wrap_content"
@@ -18,29 +11,27 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/greeting"
             android:id="@+id/textView2"
-            android:layout_weight="0.03" />
+            android:layout_alignParentTop="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/input1Label"
-            android:id="@+id/textView"
-            android:layout_weight="0.03" />
-
-        <EditText
+    <EditText
             android:layout_width="224dp"
             android:layout_height="wrap_content"
-            android:id="@+id/input1Text" />
+            android:id="@+id/input1Text"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:hint="enTer yOur NaMe pleasE..."
+        android:layout_alignParentLeft="true"
+        android:paddingTop="50px" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Translate!"
             android:id="@+id/submitTranslateButton"
-            android:layout_weight="0.03"
             android:layout_gravity="center_horizontal"
-            android:onClick="translate"/>
+            android:onClick="translate"
+            android:layout_below="@+id/input1Text"
+            android:layout_alignParentLeft="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,14 +39,15 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/translatedTextLabel"
             android:id="@+id/textView3"
-            android:layout_weight="0.03" />
+            android:layout_below="@+id/submitTranslateButton"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tranlatedText"
-            android:layout_weight="0.03"
-            android:editable="false" />
+            android:editable="false"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentRight="false" />
 
         <Button
             android:layout_width="wrap_content"
@@ -63,8 +55,18 @@
             android:text="@string/clearAppLabel"
             android:id="@+id/clearAppButton"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.03"
-            android:onClick="clearInput"/>
+            android:onClick="clearInput"
+            android:layout_below="@+id/tranlatedText"
+            android:layout_alignParentRight="true" />
 
-    </LinearLayout>
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/imageView"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:src="@drawable/misspiggy" />
+
 </RelativeLayout>

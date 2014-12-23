@@ -52,7 +52,7 @@ public class MainActivity extends ActionBarActivity {
         String output = response.substring(0, 1).toUpperCase() + response.substring(1);
 
         if( cleanedText.length() > 10) {
-            output = "Issmay Iggypay";
+            output = "Ermiekay!!!";
         }
 
         TextView translatedText =(TextView)findViewById(R.id.tranlatedText);

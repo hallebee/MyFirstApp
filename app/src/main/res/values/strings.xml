@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Porky Pig\'s Name Game</string>
+    <string name="app_name">Miss Piggy\'s Name Game</string>
     <string name="greeting">Hello Pig Latin Lovers!</string>
     <string name="action_settings">Settings</string>
     <string name="input1Label">yOur NaMe pleasE:  </string>
