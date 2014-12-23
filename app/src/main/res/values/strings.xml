@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Porky Pig\'s Name Game</string>
+    <string name="greeting">Hello Pig Latin Lovers!</string>
+    <string name="action_settings">Settings</string>
+    <string name="input1Label">yOur NaMe pleasE:  </string>
+    <string name="translatedTextLabel">Porkish Translation:  </string>
+    <string name="resp1Label" >resp1:  </string>
+    <string name="resp2Label" >resp2:  </string>
+    <string name="vowelIndexLabel">vowelIndex</string>
+    <string name="cleanedTextLabel">Cleaned Text:</string>
+    <string name="clearAppLabel">Oday Overway\!\!</string>
+</resources>
